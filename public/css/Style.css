@@ -1,0 +1,61 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.bg-color {
+    background-image: url(../img/Thammasat.jpg);
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat; 
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+   .banner h1{
+    font-weight: bold;
+    text-align: center;
+   }
+   .banner img{
+     width: 80px;
+     margin-top: 10px;
+     margin-left: 715px;
+   }
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.popup.show {
+    display: block;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    float: right;
+}
